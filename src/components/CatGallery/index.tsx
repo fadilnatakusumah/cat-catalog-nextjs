@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { ApiRequest, BASE_URL } from "@/api/utils";
 import React from "react";
 import { faker } from "@faker-js/faker";

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { BASE_URL } from "@/api/utils";
 import { useParams } from "next/navigation";
