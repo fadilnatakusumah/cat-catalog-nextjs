@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 import "./index.scss";
 
-function Card({ brand, name, isNew, colors, designerName, price }) {
+function Card({ brand, name, isNew, colors, designerName, price }: any) {
   return (
     <div className="card-wrapper">
       <div>
