@@ -8,6 +8,7 @@ export const SearchInputStyled = styled.input`
   background-color: transparent;
   outline: none;
   font-weight: bold;
+  border: none;
 
   ::placeholder {
     color: gray;

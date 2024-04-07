@@ -1,0 +1,59 @@
+@import "../../../styles/globals.scss";
+
+.cat-detail-wrapper {
+  min-height: 100vh;
+  margin-top: 30px;
+
+  padding: 12px 18px;
+
+  .cat-detail-content {
+    @include genericContainer(1200px);
+    @include va();
+    margin: 0 auto;
+    gap: 50px;
+
+    .cat-detail--thumbnails {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      img {
+        border-radius: 8px;
+      }
+    }
+
+    .cat-detail--preview {
+      // flex: 1;
+      max-width: 400px;
+
+      img {
+        width: 100%;
+        border-radius: 14px;
+      }
+    }
+
+    .cat-detail--informations {
+      height: 100%;
+
+      .cat-detail--informations-wrapper {
+        height: 300px;
+
+        .cat-detail--name {
+          font-weight: bold;
+          font-size: 2rem;
+        }
+        .cat-detail--price {
+          color: $color-primary;
+        }
+      }
+      .cat-detail--buttons {
+        display: flex;
+        gap: 8px;
+      }
+    }
+
+    @include mq(750px) {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,8 +1,8 @@
+import Closing from "@/components/Closing";
+import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import StyledComponentsRegistry from "@/lib/registry";
-import Navbar from "@/components/Navbar";
+import "../styles/globals.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,11 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <title>CatShop.com</title>
       <body className={inter.className}>
-        <StyledComponentsRegistry>
-          <Navbar />
-          {children}
-        </StyledComponentsRegistry>
+        <Navbar />
+        {children}
+        <Closing />
       </body>
     </html>
   );

@@ -1,0 +1,40 @@
+@import "../../styles/globals.scss";
+
+.hero-wrapper {
+  background-color: $color-bg;
+  > div {
+    @include genericContainer(1200px);
+    @include va();
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+
+    .hero-greetings {
+      // justify-content: space-between;
+      h1 {
+        font-size: 3em;
+      }
+
+      p {
+        margin: 14px 0;
+      }
+
+      div:last-child {
+        display: flex;
+        gap: 12px;
+      }
+    }
+
+    @include mq(740px) {
+      flex-direction: column-reverse;
+      padding-bottom: 30px;
+
+      .hero-greetings {
+        // justify-content: space-between;
+        h1 {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}

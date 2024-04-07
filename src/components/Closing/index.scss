@@ -1,0 +1,39 @@
+@import "../../styles/globals.scss";
+
+.closing-wrapper {
+  padding: 12px 18px;
+  background-image: url("../../assets/images/cats-closing.png");
+  background-size: cover;
+  height: 300px;
+  /* top, transparent black, faked with gradient */
+  background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-blend-mode: darken;
+  // filter: brightness(50%);
+  color: white;
+
+  .closing-content {
+    @include genericContainer(1200px);
+    // @include va(center);
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+
+    .closing-email {
+      color: black;
+      background-color: white;
+      padding: 10px 18px;
+      border: $generic-border;
+      margin: 20px auto;
+      width: fit-content;
+      display: block;
+      justify-content: center;
+      align-items: center;
+
+      input {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}

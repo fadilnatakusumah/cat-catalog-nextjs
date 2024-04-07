@@ -1,0 +1,61 @@
+@use "../../styles/globals.scss" as v;
+
+.card-wrapper {
+  display: relative;
+
+  > div:first-child {
+    padding: 28px;
+    border: v.$generic-border;
+  }
+
+  .card-brand {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .card-shoe-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: gray;
+  }
+
+  .card-shoe-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: gray;
+  }
+
+  .card-image-wrapper {
+    img {
+      width: 100%;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+    }
+  }
+
+  .card-designer-wrapper {
+    > div:first-child {
+      color: gray;
+      font-weight: bold;
+    }
+    > div:last-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > span:first-child {
+        font-size: 16px;
+        font-weight: bold;
+        color: gray;
+      }
+
+      > :last-child {
+        font-weight: bold;
+        font-size: 24px;
+      }
+    }
+  }
+}

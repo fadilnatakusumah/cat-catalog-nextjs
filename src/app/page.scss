@@ -1,0 +1,42 @@
+@use "../styles/globals.scss" as global;
+
+.content-wrapper {
+  display: flex;
+  border-top: global.$generic-border;
+  height: 100%;
+
+  .content-filter {
+    width: 350px;
+    border-right: global.$generic-border;
+
+    > div:first-child {
+      padding: 30px 50px;
+    }
+
+    > div:nth-child(2) {
+      height: 100%;
+      padding: 30px 50px;
+
+      background-color: #f3eff0;
+
+      // &:not(:last-child) {
+      > div:not(:last-child) {
+        // background-color: red;
+        margin-bottom: 8px;
+      }
+      // }
+    }
+  }
+
+  .content-main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+
+    > div {
+      // max-width: 300px;
+    }
+    // grid-template-rows: 1fr;
+    // flex-wrap: wrap;
+  }
+}
